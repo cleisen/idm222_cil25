@@ -4,42 +4,185 @@
     --interaction-topic: #88c23f;
     --organization-topic: #f195e4;
     --data-topic: #667ef2;
+    --off-black: #333333;
+    --section-padding: 100px 0;
+    --max-width: 1200px;
+    --button-radius: 25px;
+    --font-2: "Butler";
+}
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
+    font-family: "Quasimoda";
     background-color: var(--background-color);
+    color: var(--off-black);
+    -webkit-font-smoothing: antialiased;
+}
+.header__cont {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    max-width: var(--max-width);
+}
+.name{
+    font-weight: 600;
+    font-size: 18px;
+}
+.header__list {
+    display: flex;
+}
+
+.header__list-item {
+    list-style-type: none;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.header__link {
+    color: var(--off-black);
+    padding: 0 40px;
+    text-decoration: none;
+}
+.case__studies-title{
+    font-weight: 800;
+    font-size: 70px;
+    font-style: italic;
+    line-height: 60px;
+    -webkit-text-stroke: 2px var(--off-black);
+    color: transparent;
+}
+.case__studies {
+    padding: var(--section-padding);
+}
+.case__studies__cont {
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+.project__icon{
+    width: 60px;
+}
+.icon__first{
+    width: 50px;
+}
+.icon__third{
+    width: 70px;
+}
+.project__title{
+    font-family: var(--font-2);
+    font-size: 30px;
+}
+.project__subtitle{
+    font-weight: 350;
+}
+.topic__btn__1{
+    height: 25px;
+    width: 100px;
+    background-color: var(--branding-topic);
+    border-radius: var(--button-radius);
+    border: 2px solid transparent;
+    color: white;
+    font-weight: 600;
+    font-family: "Quasimoda";
+}
+.topic__btn__2{
+    height: 25px;
+    width: 120px;
+    background-color: var(--interaction-topic);
+    border-radius: var(--button-radius);
+    border: 2px solid transparent;
+    color: white;
+    font-weight: 600;
+    font-family: "Quasimoda";
+}
+.topic__btn__3{
+    height: 25px;
+    width: 130px;
+    background-color: var(--organization-topic);
+    border-radius: var(--button-radius);
+    border: 2px solid transparent;
+    color: white;
+    font-weight: 600;
+    font-family: "Quasimoda";
+}
+.topic__btn__4{
+    height: 25px;
+    width: 125px;
+    background-color: var(--data-topic);
+    border-radius: var(--button-radius);
+    border: 2px solid transparent;
+    color: white;
+    font-weight: 600;
+    font-family: "Quasimoda";
+}
+.project__btn{
+    height: 25px;
+    width: 150px;
+    background-color: transparent;
+    border-radius: var(--button-radius);
+    border: 2px solid var(--off-black);
+    color: var(--off-black);
+    font-weight: 600;
+    font-family: "Quasimoda";
+}
+.case__study {
+    border-top: 2px solid var(--off-black);
+    margin-bottom: 20px;
+    padding: 50px;
 }
 .dot__1 {
-    height: 23px;
-    width: 23px;
+    height: 16px;
+    width: 16px;
     background-color: var(--branding-topic);
     border-radius: 50%;
     display: inline-block;
   }
   .dot__2 {
-    height: 23px;
-    width: 23px;
+    height: 16px;
+    width: 18px;
     background-color: var(--interaction-topic);
     border-radius: 50%;
     display: inline-block;
   }
   .dot__3 {
-    height: 23px;
-    width: 23px;
+    height: 16px;
+    width: 16px;
     background-color: var(--organization-topic);
     border-radius: 50%;
     display: inline-block;
   }
   .dot__4 {
-    height: 23px;
-    width: 23px;
+    height: 16px;
+    width: 16px;
     background-color: var(--data-topic);
     border-radius: 50%;
     display: inline-block;
   }
+  .email__link{
+      font-family: var(--font-2);
+      font-weight: 800;
+  }
   .contact__circle{
     height: 130px;
     width: 130px;
-    border: 4px solid #333333;
+    border: 4px solid var(--off-black);
     border-radius: 50%;
-    /* display: inline-block; */
+  }
+  .menu{
+      display: flex;
+      justify-content: center;
+  }
+  .social__menu-item{
+      list-style-type: none;
+  }
+  .menu__link{
+    color: var(--off-black);
+    padding: 50px 100px;
+    text-decoration: none;
+    font-weight: 500;
   }
