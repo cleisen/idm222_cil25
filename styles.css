@@ -1,0 +1,45 @@
+:root{
+    --background-color: #f1e9e1;
+    --branding-topic: #ff8f1e;
+    --interaction-topic: #88c23f;
+    --organization-topic: #f195e4;
+    --data-topic: #667ef2;
+}
+body{
+    background-color: var(--background-color);
+}
+.dot__1 {
+    height: 23px;
+    width: 23px;
+    background-color: var(--branding-topic);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot__2 {
+    height: 23px;
+    width: 23px;
+    background-color: var(--interaction-topic);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot__3 {
+    height: 23px;
+    width: 23px;
+    background-color: var(--organization-topic);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot__4 {
+    height: 23px;
+    width: 23px;
+    background-color: var(--data-topic);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .contact__circle{
+    height: 130px;
+    width: 130px;
+    border: 4px solid #333333;
+    border-radius: 50%;
+    /* display: inline-block; */
+  }
