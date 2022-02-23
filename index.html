@@ -10,8 +10,10 @@
 <body>
     <header class="header">
         <div class="header__cont">
-            <img class="header__logo" src="images/logo.png" alt="christina logo" />
-            <p class="name">Christina Leisen</p>
+            <div class="logo">
+                <img class="header__logo" src="images/logo.png" alt="christina logo" />
+                <p class="name">Christina Leisen</p>
+            </div>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__list-item">
@@ -35,39 +37,53 @@
         </section>
         <section class="case__studies">
             <div class="case__studies__cont">
-                <p class="case__studies-title">CASE <br> STUDIES</p>
+                <p class="case__studies-title">CASE</p>
+                <p class="case__studies-title">STUDIES</p>
+
                 <div class="topic__btns">
                     <button class="topic__btn__1">BRANDING</button>
                     <button class="topic__btn__2">INTERACTION</button>
                     <button class="topic__btn__3">ORGANIZATION</button>
                     <button class="topic__btn__4">DATA DRIVEN</button>
                 </div>
-                <div class="case__study">
+                <div class="case__study case__first">
                     <img class="project__icon icon__first" src="images/amtrak_icon.png" alt="amtrak__icon" />
-                    <h2 class="project__title">Amtrak App - Task Flow Redesign</h2>
-                    <p class="project__subtitle">In this redesign, I learned the importance of microinteractions and the skills of creating signature features...</p>
-                    <span class="dot__1"></span>
-                    <span class="dot__2"></span>
-                    <span class="dot__3"></span>
-                    <button class="project__btn">VIEW PROJECT</button>
+                    <div class="case__bottom">
+                            <h2 class="project__title">Amtrak App - Task Flow Redesign</h2>
+                        <p class="project__subtitle">In this redesign, I learned the importance of microinteractions and the skills of creating signature features...</p>
+                        <div class="topic__dots">
+                            <span class="dot__1"></span>
+                            <span class="dot__3"></span>
+                            <span class="dot__2"></span>
+                        </div>
+                        <button class="project__btn">VIEW PROJECT</button>
+                    </div>
                 </div>
                 <div class="case__study case__second">
                     <img class="project__icon icon__second" src="images/euro_icon.png" alt="euro__icon" />
-                    <h2 class="project__title project__second">Euronews Website - Navigation Redesign</h2>
-                    <p class="project__subtitle">Through a heuristic evaluation process, a peer and I rated certain elements...</p>
-                    <span class="dot__1"></span>
-                    <span class="dot__3"></span>
-                    <span class="dot__4"></span>
-                    <button class="project__btn">VIEW PROJECT</button>
+                    <div class="case__bottom">
+                            <h2 class="project__title project__second">Euronews Website - Navigation Redesign</h2>
+                        <p class="project__subtitle">Through a heuristic evaluation process, a peer and I rated certain elements...</p>
+                        <div class="topic__dots">
+                            <span class="dot__1"></span>
+                            <span class="dot__4"></span>
+                            <span class="dot__3"></span>
+                        </div>
+                        <button class="project__btn">VIEW PROJECT</button>
+                    </div>
                 </div>
                 <div class="case__study case__third">
                     <img class="project__icon icon__third" src="images/am_logo.png" alt="am__icon" />
-                    <h2 class="project__title Project__third">Arctic Monkeys Website - Style Redesign</h2>
-                    <p class="project__subtitle">I decided to add more branding features such as a bio about the band, make their logo consistent across the pages, and more...</p>
-                    <span class="dot__1"></span>
-                    <span class="dot__3"></span>
-                    <span class="dot__4"></span>
-                    <button class="project__btn">VIEW PROJECT</button>
+                    <div class="case__bottom">
+                            <h2 class="project__title Project__third">Arctic Monkeys Website - Style Redesign</h2>
+                        <p class="project__subtitle">I decided to add more branding features such as a bio about the band, make their logo consistent across the pages, and more...</p>
+                        <div class="topic__dots">
+                            <span class="dot__1"></span>
+                            <span class="dot__4"></span>
+                            <span class="dot__3"></span>
+                        </div>
+                        <button class="project__btn">VIEW PROJECT</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -75,23 +91,21 @@
             <div class="contact__cont">
                 <div class="email__link" >email me &gt;</div>
                 <div class="contact__circle"></div>
-                <img class="collab__icon" src="images/collaborate.png" alt="collaborate" />
+                <img class="collab__curve" src="images/collaborate.png" alt="collaborate" />
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__cont">
-            <div class="social__menu">
-                <ul class="menu">
-                    <li class="social__menu-item">
-                        <a class="menu__link" href="">Linked In</a></li>
-                    <li class="social__menu-item">
-                        <a class="menu__link" href="">Phone</a></li>
-                    <li class="social__menu-item">
-                        <a class="menu__link" href="">Email</a></li>
-                </ul>
+        <div class="footer__first">
+            <p>
+                This website is developed by Christina Leisen.
+            </p>
             </div>
-        </div>
+            <div class="footer__second">
+                <p>
+                &copy; Christina Leisen 2022
+                 </p>
+                </div>        
     </footer>
 </body>
 </html>
