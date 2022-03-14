@@ -22,6 +22,14 @@
 body{
     font-family: "Quasimoda";
     background-color: var(--background-color);
+    background-image:  
+    radial-gradient(at 64% 0%, hsla(60,99%,78%,1) 0, transparent 22%),  
+    radial-gradient(at 16% 30%, hsla(78,95%,73%,1) 0, transparent 16%),  
+    radial-gradient(at 100% 26%, hsla(37,85%,66%,1) 0, transparent 14%),  
+    radial-gradient(at 34% 100%, hsla(78,95%,73%,1) 0, transparent 26%),  
+    radial-gradient(at 12% 55%, hsla(320,100%,87%,1) 0, transparent 18%),  
+    radial-gradient(at 78% 64%, hsla(65,99%,79%,1) 0, transparent 17%),  
+    radial-gradient(at 100% 100%, hsla(60,99%,74%,1) 0, transparent 16%);
     color: var(--off-black);
     -webkit-font-smoothing: antialiased;
 }
@@ -43,7 +51,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 30px 30px;
     max-width: var(--max-width);
 }
 .header__list {
@@ -59,7 +67,7 @@ body{
 
 .header__link {
     color: var(--off-black);
-    padding: 0 40px;
+    padding-left: 40px;
     text-decoration: none;
 }
 .hero{
