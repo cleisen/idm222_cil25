@@ -29,25 +29,56 @@
             </nav>
         </div>
     </header>
+
+    <nav class="hamToggle" role="navigation">
+        <div id="menuToggle">
+          <!--
+        A fake / hidden checkbox is used as click reciever,
+        so can use the :checked selector on it.
+        -->
+          <input type="checkbox" />
+  
+          <!--
+        Some spans to act as a hamburger.
+        -->
+          <span></span>
+          <span></span>
+          <span></span>
+  
+          <ul id="menu">
+            <a href="#UX/UI"><li>UX/UI</li></a>
+            <a href=""><li>resume</li></a>
+            <a href=""><li>about</li></a>
+          </ul>
+        </div>
+      </nav>
+
     <main>
         <section class="hero">
-            <div class="hero__cont">
-                <img class="home__img" src="images/home_images.png" alt="I am majoring in 
-                User Experience & Interactive Design at Drexel University in Philadelphia, 
-                PA. I love discovering everyday issues and utilizing my creativity to 
-                provide functional and well-thought-out solutions for them."/>
+            <div class="hero__img">
+               
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./images/home-img/hero-large.png" />
+                      <source media="(min-width: 700px)" srcset="./images/home-img/hero-medium.png" />
+                      <source media="(min-width: 0px)" srcset="./images/home-img/hero-small.png" />
+                      <img src="./images/home-img/hero-small.png" class="hero-img" alt="I am majoring in 
+                      User Experience & Interactive Design at Drexel University in Philadelphia, 
+                      PA. I love discovering everyday issues and utilizing my creativity to 
+                      provide functional and well-thought-out solutions for them." />
+                    </picture>
+            
             </div>
         </section>
-        <section class="case__studies">
+        <section class="case__studies" id="UX/UI">
             <div class="case__studies__cont">
                 <p class="case__studies-title">CASE</p>
                 <p class="case__studies-title">STUDIES</p>
 
                 <div class="topic__btns">
-                    <button class="topic__btn__1">BRANDING</button>
-                    <button class="topic__btn__2">INTERACTION</button>
-                    <button class="topic__btn__3">ORGANIZATION</button>
-                    <button class="topic__btn__4">DATA DRIVEN</button>
+                    <button class="topic__btn__1 topic">BRANDING</button>
+                    <button class="topic__btn__2 topic">INTERACTION</button>
+                    <button class="topic__btn__3 topic">ORGANIZATION</button>
+                    <button class="topic__btn__4 topic">DATA DRIVEN</button>
                 </div>
                 <div class="projects">
 
@@ -109,9 +140,9 @@
         </section>
         <section class="contact">
             <div class="contact__cont">
-                <div class="email__link" >email me &gt;</div>
-                <div class="contact__circle"></div>
-                <img class="collab__curve" src="images/collaborate.png" alt="collaborate" />
+                <!-- <div class=" contact email__link" >email me &gt;</div>
+                <div class=" contact contact__circle"></div> -->
+                <img class=" contact collab__curve" src="images/collaborate-img.png" alt="collaborate" />
             </div>
         </section>
         
