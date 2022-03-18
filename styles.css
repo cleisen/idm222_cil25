@@ -19,6 +19,10 @@
     margin: 0;
     padding: 0;
 }
+img {
+    height: auto;
+    width: 100%;
+  }
 body{
     font-family: "Quasimoda";
     background-color: var(--background-color);
@@ -45,6 +49,7 @@ body{
     font-weight: 600;
     font-size: 20px;
     padding-right: 25px;
+    text-align: left;
 }
 .header__cont {
     align-items: center;
@@ -238,6 +243,121 @@ body{
     margin-bottom: 30px;
 }
 
+.amtrak{
+    background-image: none;
+}
+.amtrak__intro {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-indent: 20px;
+    font-style: normal;
+    padding: 20px 10px;
+    margin-top: 10px;
+    border-top: 2px solid var(--interaction-topic);
+    border-bottom: 2px solid var(--interaction-topic);;
+  }
+  .subheading {
+    font-family: var(--font-2);
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px 20px 0 20px;
+  }
+  main .amtrak__page p{
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 20px;
+  }
+  figure {
+    margin: 40px 20px 0 20px;
+  }
+  figcaption {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .subheading1 {
+    padding: 0 20px 20px 20px;
+    font-weight: 500;
+    font-style: italic;
+  }
+  .subheading2 {
+    font-weight: 500;
+    font-style: italic;
+    padding: 20px;
+  }
+  .imgboth {
+    margin: 20px 0 20px 0;
+  }
+  .imgtop {
+    margin: 20px 0 0 0;
+  }
+  .imgbottom {
+    margin: 0 0 20px 0;
+  }
+  .imgchange {
+    margin: 20px;
+    width: 90%;
+  }
+  iframe {
+    padding: 20px 0;
+  }
+  .header__logo-cs{
+    padding: 20px;
+    width: 85%
+}
+.header__cont-cs{
+    align-items: flex-start;
+    margin-left: 0;
+}
+.title{
+    padding: 0 18px;
+}
+.amtrak__img{
+    margin: 0 auto;
+    width: 290px;
+    display: flex;
+    align-items: center;
+}
+.amtrak__head{
+    font-family: "Quasimoda";
+    font-weight: 800;
+    font-size: 235%;
+    font-style: italic;
+    line-height: 54px;
+    -webkit-text-stroke: 1.5px var(--off-black);
+    color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -25px;
+    letter-spacing: 1.2px;
+}
+.fill{
+    color: var(--off-black);
+    -webkit-text-stroke: 0px;
+    font-size: 145%;
+}
+.numbers{
+    font-family: "Quasimoda";
+    font-weight: 800;
+    font-size: 235%;
+    font-style: italic;
+    line-height: 54px;
+    -webkit-text-stroke: 1.5px var(--off-black);
+    color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    letter-spacing: 1.2px;
+    margin: 35px 0 -5px 20px; 
+}
+.first{
+    padding: 0 20px;
+    margin: 0 0 20px 0;
+}
+
 /* MOBILE ONLY */
 @media screen and (min-width: 0px) {
     div.hero__img img {
@@ -288,7 +408,7 @@ body{
 
     /* nav bar */
 
-    #menuToggle {
+    .menuToggle {
         display: block;
         position: relative;
         top: 35px;
@@ -298,18 +418,18 @@ body{
         user-select: none;
     }
     
-    #menuToggle a {
+    .menuToggle a {
         text-decoration: none;
         color: #232323;
     
         transition: color 0.3s ease;
     }
     
-    #menuToggle a:hover {
+    .menuToggle a:hover {
         color: #fff;
     }
     
-    #menuToggle input {
+    .menuToggle input {
         display: block;
         width: 40px;
         height: 32px;
@@ -328,7 +448,7 @@ body{
     /*
     * Just a quick hamburger
     */
-    #menuToggle span {
+    .menuToggle span {
         display: block;
         width: 33px;
         height: 4px;
@@ -346,11 +466,11 @@ body{
         background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     }
     
-    #menuToggle span:first-child {
+    .menuToggle span:first-child {
         transform-origin: 0% 0%;
     }
     
-    #menuToggle span:nth-last-child(2) {
+    .menuToggle span:nth-last-child(2) {
         transform-origin: 0% 100%;
     }
     
@@ -358,7 +478,7 @@ body{
     * Transform all the slices of hamburger
     * into a crossmark.
     */
-    #menuToggle input:checked ~ span {
+    .menuToggle input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
         background: var(--branding-topic);
@@ -367,7 +487,7 @@ body{
     /*
     * But let's hide the middle one.
     */
-    #menuToggle input:checked ~ span:nth-last-child(3) {
+    .menuToggle input:checked ~ span:nth-last-child(3) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
@@ -375,7 +495,7 @@ body{
     /*
     * Ohyeah and the last one should go the other direction
     */
-    #menuToggle input:checked ~ span:nth-last-child(2) {
+    .menuToggle input:checked ~ span:nth-last-child(2) {
         transform: rotate(-45deg) translate(0, -1px);
     }
     
@@ -383,7 +503,7 @@ body{
     * Make this absolute positioned
     * at the top left of the screen
     */
-    #menu {
+    .menu {
         position: absolute;
         width: 100%;
         padding: 50px 50px 50px 70px;
@@ -402,7 +522,7 @@ body{
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     }
     
-    #menu li {
+    .menu li {
         padding: 12px 0;
         font-size: 137.5%;
     }
@@ -410,12 +530,16 @@ body{
     /*
     * And let's slide it in from the left
     */
-    #menuToggle input:checked ~ ul {
+    .menuToggle input:checked ~ ul {
         transform: none;
     }
     .header{
         display: none;
     }
+    .header__amtrak{
+        display: flex;
+    }
+    
 }
 
 /* TABLET ONLY */
@@ -476,6 +600,9 @@ body{
     .header{
         display: block;
     }
+    div.title img {
+        width: 400px;
+      }
 }
 
 /* DESKTOP ONLY */
@@ -516,4 +643,7 @@ body{
         width: 95px;
         height: auto;
     }
+    div.title img {
+        width: 500px;
+      }
 }
