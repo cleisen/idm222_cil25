@@ -191,6 +191,15 @@ body{
     font-family: "Quasimoda";
     margin-left: auto;
 }
+button.project__btn:hover,
+button:focus {
+	background-color: #da5a4c;
+	color: white;
+}
+
+button.project__btn:hover {
+	cursor: pointer;
+}
 .case__study {
     border-top: 2px solid var(--off-black);
     padding: 50px;
@@ -354,9 +363,9 @@ body{
 .amtrak__head, .euro__head{
     font-family: "Quasimoda";
     font-weight: 800;
-    font-size: 235%;
+    font-size: 30px;
     font-style: italic;
-    line-height: 54px;
+    line-height: 30px;
     -webkit-text-stroke: 1.5px var(--off-black);
     color: transparent;
     display: flex;
@@ -367,7 +376,8 @@ body{
 .fill{
     color: var(--off-black);
     -webkit-text-stroke: 0px;
-    font-size: 145%;
+    font-size: 20px;
+    line-height: 80px;
 }
 .numbers{
     font-family: "Quasimoda";
