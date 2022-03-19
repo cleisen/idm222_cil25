@@ -194,7 +194,7 @@ body{
 button.project__btn:hover,
 button:focus {
 	background-color: #da5a4c;
-	color: var(--off-black);
+	color: white;
 }
 
 button.project__btn:hover {
@@ -203,6 +203,7 @@ button.project__btn:hover {
 button.btn__3:hover,
 button:focus{
     background-color: transparent;
+    color: var(--off-black)
 }
 .case__study {
     border-top: 2px solid var(--off-black);
