@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+    <!-- logo and name -->
     <header class="header">
         <div class="header__cont">
             <div class="logo">
                 <img class="header__logo" src="images/logo.png" alt="christina logo" />
                 <p class="name">Christina Leisen</p>
             </div>
+
+            <!-- nav on right of screen -->
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__list-item">
@@ -32,15 +36,10 @@
 
     <nav class="hamToggle" role="navigation">
         <div class="menuToggle">
-          <!--
-        A fake / hidden checkbox is used as click reciever,
-        so can use the :checked selector on it.
-        -->
+          
           <input type="checkbox" />
   
-          <!--
-        Some spans to act as a hamburger.
-        -->
+          <!--Some spans to act as a hamburger.-->
           <span></span>
           <span></span>
           <span></span>
@@ -56,7 +55,7 @@
     <main>
         <section class="hero">
             <div class="hero__img">
-               
+               <!-- big fun main picture -->
                     <picture>
                       <source media="(min-width: 1200px)" srcset="./images/home-img/hero-large.png" />
                       <source media="(min-width: 700px)" srcset="./images/home-img/hero-medium.png" />
@@ -69,11 +68,14 @@
             
             </div>
         </section>
+
+        <!-- case studies section -->
         <section class="case__studies" id="UX/UI">
             <div class="case__studies__cont">
                 <p class="case__studies-title">CASE</p>
                 <p class="case__studies-title">STUDIES</p>
 
+                <!-- buttons that act as a key -->
                 <div class="topic__btns">
                     <button class="topic__btn__1 topic">BRANDING</button>
                     <button class="topic__btn__2 topic">INTERACTION</button>
@@ -113,7 +115,7 @@
                                 </div>    
                             </div>
                         </div>
-                        <div class="project__button-cont">
+                        <div class="project__button-cont" href="euronews_page.html">
                             <button class="project__btn">VIEW PROJECT</button>
                         </div>
                     </div>
@@ -131,13 +133,16 @@
                                 </div>
                             </div>  
                         </div>
-                        <div class="project__button-cont">
+                        <div class="project__button-cont" href="euronews_page.html">
                             <button class="project__btn">VIEW PROJECT</button>
                         </div>      
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- ayy the end, the contact me content -->
+
         <section class="contact">
             <div class="contact__cont">
                 <!-- <div class=" contact email__link" >email me &gt;</div>
@@ -147,6 +152,8 @@
         </section>
         
     </main>
+
+    <!-- footer with official writing -->
     <footer class="footer">
         <div class="footer__first">
             <p>
