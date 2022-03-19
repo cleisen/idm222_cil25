@@ -194,11 +194,15 @@ body{
 button.project__btn:hover,
 button:focus {
 	background-color: #da5a4c;
-	color: white;
+	color: var(--off-black);
 }
 
 button.project__btn:hover {
 	cursor: pointer;
+}
+button.btn__3:hover,
+button:focus{
+    background-color: transparent;
 }
 .case__study {
     border-top: 2px solid var(--off-black);
