@@ -267,7 +267,7 @@ body{
 .amtrak{
     background-image: none;
 }
-.amtrak__intro {
+.amtrak__intro, .euronews__intro {
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
@@ -278,6 +278,10 @@ body{
     border-top: 2px solid var(--interaction-topic);
     border-bottom: 2px solid var(--interaction-topic);;
   }
+  .euronews__intro{
+    border-top: 2px solid var(--data-topic);
+    border-bottom: 2px solid var(--data-topic);;
+  }
   .subheading {
     font-family: var(--font-2);
     margin: 25px 0;
@@ -285,7 +289,7 @@ body{
     font-size: 20px;
     padding: 20px 20px 0 40px;
   }
-  main .amtrak__page p{
+  main .amtrak__page p, main .euronews__page p{
     padding: 0 20px;
     font-weight: 400;
     font-size: 13px;
@@ -347,7 +351,7 @@ body{
     display: flex;
     align-items: center;
 }
-.amtrak__head{
+.amtrak__head, .euro__head{
     font-family: "Quasimoda";
     font-weight: 800;
     font-size: 235%;
@@ -568,7 +572,7 @@ body{
     .header{
         display: none;
     }
-    .header__amtrak{
+    .header__amtrak, .header__euronews{
         display: flex;
     }
     
@@ -653,7 +657,7 @@ body{
         padding: 35px 20px 20px 45px;
         width: 125px;
     }
-    .amtrak__head{
+    .amtrak__head, .euro__head{
         font-size: 55px;
         margin-top: -80px;
         line-height: 40px;
@@ -662,11 +666,11 @@ body{
         margin-top: 0;
         font-size: 35px;
     }
-    .amtrak__intro {
+    .amtrak__intro, .euronews__intro {
         margin-top: 20px;
         padding: 40px 80px;
     }
-    .amtrak p, main .amtrak__page p{
+    .amtrak p, main .amtrak__page p, .euronews p, main .euronews__page p{
         font-size: 15px;
         line-height: 18px;
     }
@@ -774,22 +778,22 @@ body{
         max-width: var(--max-width);
         margin: 0 auto;
     }
-    .amtrak__head{
+    .amtrak__head, .euro__head{
         font-size: 65px;
         line-height: 47px;
     }
-    .amtrak{
+    .amtrak, .euronews{
         max-width: 1200px;
         margin: 0 auto;
     }
     .fill{
         font-size: 45px;
     }
-    .amtrak__intro {
+    .amtrak__intro, .euronews__intro {
         margin-top: 20px;
         padding: 50px 90px;
     }
-    .amtrak p, main .amtrak__page p{
+    .amtrak p, main .amtrak__page p, .euronews p, main .euronews__page p{
         font-size: 18px;
         line-height: 22px;
     }
