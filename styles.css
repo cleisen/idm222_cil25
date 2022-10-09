@@ -94,13 +94,42 @@ body{
     animation: fadeIn .5s ease-in .5s forwards;
     opacity: 0;
 }
+.intro{
+    width: 50%;
+}
+.hi__there{
+    padding-bottom: 20px;
+}
+h1{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 55px;
+}
+.my__name{
+    font-style: normal;
+    /* font-weight: 550; */
+    color: #F78F26;
+}
+.squiggle{
+    width: 30%;
+}
+.i__am{
+    padding-top: 15px;
+    width: 60%;
+    font-size: 20px;
+    line-height: 25px;
+}
+.UXID{
+    color: var(--data-topic)
+}
 .case__studies-title{
-    font-weight: 800;
+    font-weight: 500;
     font-size: 60px;
     font-style: italic;
     line-height: 52px;
-    -webkit-text-stroke: 2px var(--off-black);
-    color: transparent;
+    /* -webkit-text-stroke: 2px var(--off-black); */
+    color: var(--off-black);
     display: flex;
     justify-content: flex-end;
 }
@@ -129,8 +158,9 @@ body{
     width: 70px;
 }
 .project__title{
-    font-family: var(--font-2);
+    font-family: "Quasimoda";
     font-size: 30px;
+    font-weight: 500;
 }
 .project__subtitle{
     font-weight: 350;
@@ -743,8 +773,8 @@ button:focus{
         padding: 0 auto;
       }
       .case__studies-title{
-        font-size: 90px;
-        line-height: 80px;
+        font-size: 65px;
+        line-height: 100px;
     }
     .topic{
         font-size: 14px;
