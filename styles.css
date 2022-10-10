@@ -126,7 +126,7 @@ h1{
     color: #F78F26;
 }
 .squiggle{
-    width: 30%;
+    width: 40%;
 }
 .i__am{
     padding-top: 15px;
@@ -169,8 +169,11 @@ h1{
 .icon__first{
     width: 50px;
 }
+.icon__second{
+    width: 50px;
+}
 .icon__third{
-    width: 70px;
+    width: 60px;
 }
 .project__title{
     font-family: "Quasimoda";
