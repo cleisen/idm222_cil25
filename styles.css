@@ -10,6 +10,7 @@
     --button-radius: 25px;
     --font-2: "Butler";
     --topic-margin: 0 20px 0 0;
+    --top-btn-margin: 0 7px 00;
     --dot-margin: 3px;
 
 }
@@ -330,7 +331,7 @@ button:focus{
 .amtrak{
     background-image: none;
 }
-.amtrak__intro, .euronews__intro {
+/* .amtrak__intro, .euronews__intro {
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
@@ -351,7 +352,44 @@ button:focus{
     font-weight: 500;
     font-size: 20px;
     padding: 20px 20px 0 40px;
-  }
+  } */
+
+.title__left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+  .top__btns{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-bottom: -13px;
+    margin-left: 12px;
+}
+
+.top__btn__1, .top__btn__2, .top__btn__3{
+    height: 33px;
+    width: 93px;
+    background-color: transparent;
+    border-radius: var(--button-radius);
+    border: 1px solid var(--off-black);
+    color: var(--off-black);
+    font-weight: 500;
+    font-family: "Quasimoda";
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    margin: var(--top-btn-margin);
+}
+.top__btn__2{
+    width: 120px;
+}
+.top__btn__3{
+    width: 139px;
+}
+
+
   main .amtrak__page p, main .euronews__page p{
     padding: 0 20px;
     font-weight: 400;
@@ -416,16 +454,14 @@ button:focus{
 }
 .amtrak__head, .euro__head{
     font-family: "Quasimoda";
-    font-weight: 800;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 90px;
+    letter-spacing: 0.065em;
     font-style: italic;
-    line-height: 30px;
-    -webkit-text-stroke: 1.5px var(--off-black);
-    color: transparent;
+    color: var(--off-black);
     display: flex;
     justify-content: flex-start;
-    margin-top: -25px;
-    letter-spacing: 1.2px;
 }
 .fill{
     color: var(--off-black);
@@ -826,8 +862,8 @@ button:focus{
       } */
     .amtrak__img{
         margin: 0 auto;
-        padding-right: 40px;
-        margin-right: 30px;
+        /* padding-right: 40px; */
+        /* margin-right: 30px; */
         width: 600px;
     }
     .amtrak__img-cont{
@@ -843,7 +879,7 @@ button:focus{
         margin: 0 auto;
     }
     .amtrak__head, .euro__head{
-        font-size: 65px;
+        font-size: 55px;
         line-height: 47px;
     }
     .amtrak, .euronews{
