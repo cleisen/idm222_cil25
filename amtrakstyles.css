@@ -175,14 +175,120 @@ body{
     width: 500px;
 }
 
+.page{
+    width: 70%;
+    margin: auto;
+}
 
+.description{
+    margin-top: 30px;
+}
 
+#infoBlock{
+    align-items: flex-start;
+    margin-top: 35px;
+}
 
+.flex__container{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.col_1_3{
+    width: 30%;
+    height: auto;
+    padding: 5px;
+}
 
+.pi{
+    margin-left: 15px;
+}
 
+.rr{
+    margin-left: 45px;
+    width: 40%;
+}
 
+.tu{
+    width: 15%;
+    margin-left: 45px;
+}
 
+h3{
+    padding-bottom: 20px;
+    color: var(--branding-topic);
+    font-weight: 400;
+}
+
+.overview{
+    margin-top: 60px;
+}
+
+h1{
+    margin-top: 40px;
+    color: var(--data-topic);
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video1{
+    max-height: 600px;
+    width: 340px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.rebrand{
+    height: 550px;
+    width: auto;
+}
+
+.subtext{
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.compare{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img_left{
+    width: 250px;
+    height: auto;
+}
+
+.img_right{
+    width: 250px;
+    height: 444px;
+}
+
+.video{
+    margin-top: 40px;
+    width: 250px;
+    height: 440px;
+}
 
 
 
@@ -288,7 +394,7 @@ body{
     
     /*
     * Make this absolute positioned
-    * at the top left of the screen
+    * at the left of the screen
     */
     .menu {
        position: absolute;
