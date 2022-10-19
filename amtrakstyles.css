@@ -261,6 +261,10 @@ h2{
     width: auto;
 }
 
+.how{
+    margin-bottom: -20px;
+}
+
 .subtext{
     margin-top: 80px;
     font-size: 20px;
@@ -289,6 +293,53 @@ h2{
     width: 250px;
     height: 440px;
 }
+
+.profile{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h4{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.col_1_2{
+    width: 50%;
+    height: auto;
+    padding: 5px;
+}
+
+.questions{
+    font-weight: 600;
+    margin-top: 10px;
+    padding-left: 60px;
+}
+
+.one_image{
+    margin-top: 40px;
+}
+
+.style_tile{
+    width: 50%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
