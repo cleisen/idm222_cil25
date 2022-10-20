@@ -10,48 +10,50 @@
 </head>
 <body class="amtrak">
     <main>
-        <!-- logo and name -->
-    <header class="header">
-        <div class="header__cont">
-            <a class="logo" href="index.html">
-                <img class="header__logo" src="images/logo.png" alt="christina logo" />
-                <!-- <p class="name">Christina Leisen</p> -->
-            </a>
-
-            <!-- nav on right of screen -->
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__list-item">
-                        <a class="header__link" href="index.html#UX/UI">projects</a>
-                    </li>
-                    <!-- <li class="header__list-item">
-                        <a class="header__link" href="#">creative</a>
-                    </li> -->
-                    <li class="header__list-item">
-                        <a class="header__link" href="#">about</a>
-                    </li>
-                </ul>
+        
+        <nav class="hamToggle" role="navigation">
+            <div class="menuToggle">
+                
+                <input type="checkbox" />
+                
+                <!--Some spans to act as a hamburger.-->
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <ul class="menu">
+                    <a href="#UX/UI"><li>projects</li></a>
+                    <!-- <a href=""><li>resume</li></a>
+                        <a href=""><li>about</li></a> -->
+                    </ul>
+                </div>
             </nav>
-        </div>
-    </header>
 
-    <nav class="hamToggle" role="navigation">
-        <div class="menuToggle">
-          
-          <input type="checkbox" />
-  
-          <!--Some spans to act as a hamburger.-->
-          <span></span>
-          <span></span>
-          <span></span>
-  
-          <ul class="menu">
-            <a href="#UX/UI"><li>projects</li></a>
-            <!-- <a href=""><li>resume</li></a>
-            <a href=""><li>about</li></a> -->
-          </ul>
-        </div>
-      </nav>
+    <div class="header_title">   
+            <!-- logo and name -->
+        <header class="header">
+            <div class="header__cont">
+                <a class="logo" href="index.html">
+                    <img class="header__logo" src="images/logo.png" alt="christina logo" />
+                    <!-- <p class="name">Christina Leisen</p> -->
+                </a>
+    
+                <!-- nav on right of screen -->
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a class="header__link" href="index.html#UX/UI">projects</a>
+                        </li>
+                        <!-- <li class="header__list-item">
+                            <a class="header__link" href="#">creative</a>
+                        </li> -->
+                        <li class="header__list-item">
+                            <a class="header__link" href="#">about</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
       <div class="top">
 
@@ -79,6 +81,12 @@
             </div>
             </div>
         </div>
+    </div>
+
+    <div class="bg_shape">
+        <img src="images/amtrak-cs/amtrak-top/bg_shape.png" alt="bg_shape">
+    </div>
+
         <div class="page">
 
             <div class="description">
@@ -123,7 +131,7 @@
             </div>
 
             <div>
-                <h1>the problem</h1>
+                <h1 class="underline">the problem</h1>
                 <div class="">
                     The main issue with the Amtrak app is its frustrating and inefficient 
                     process for users looking to quickly check their train status. The design 
@@ -133,7 +141,7 @@
             </div>
 
             <div>
-                <h1>goal</h1>
+                <h1 class="underline">goal</h1>
                 <div class="">
                 To create a more efficient and delightful experience for Amtrak travelers 
                 by designing signature features and reorganizing the task flow.
@@ -147,7 +155,7 @@
             </div>
 
             <div>
-                <h1>solution</h1>
+                <h1 class="underline">solution</h1>
                 <div class="">
                 Final high-fidelity animation of the interaction after rendering through 
                 Adobe After Effects:
@@ -204,7 +212,7 @@
             </div>
 
             <div>
-                <h1>the process</h1>
+                <h1 class="process">the process</h1>
                 
                 <div class="profile">
                     <h4>User Profile</h4>
@@ -307,8 +315,6 @@
             doing. I will keep this in mind and try to implement something similar in a future project.
 
             <img src="images/amtrak-cs/thank-medium.jpg" class="center one_image" alt="thanks">
-
-
                 
         </div>
             

@@ -51,7 +51,6 @@ body{
 /* vvvv NAV BAR vvvv */
 
 
-
 .logo{
     display: flex;
     flex-direction: row;
@@ -66,7 +65,8 @@ body{
     justify-content: space-between;
     margin: 0 auto;
     padding: 35px 45px;
-    max-width: var(--max-width);
+    min-width: var(--max-width);
+    max-width: var(1400px);
 }
 .header__list {
     display: flex;
@@ -112,11 +112,24 @@ body{
 
 /* vvvv REST OF PAGE vvvv */
 
+.header_title{
+    position: absolute;
+    z-index: 2;
+    margin-left: 50px;
+}
+
+.bg_shape{
+    position: relative;
+    z-index: 1;
+}
+
 .title{
     padding: 0 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 .title__left{
@@ -166,13 +179,13 @@ body{
     width: 139px;
 }
 
-.amtrak__img-cont{
+/* .amtrak__img-cont{
     width: 40%;
-}
+} */
 
 .amtrak__img{
     margin: auto;
-    width: 500px;
+    width: 480px;
 }
 
 .page{
@@ -226,6 +239,10 @@ h3{
     margin-top: 60px;
 }
 
+.underline{
+    text-decoration: underline var(--branding-topic);
+}
+
 h1{
     margin-top: 40px;
     color: var(--data-topic);
@@ -253,7 +270,7 @@ h2{
     font-weight: 500;
     font-style: italic;
     font-size: 24px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .rebrand{
@@ -294,15 +311,22 @@ h2{
     height: 440px;
 }
 
+.process{
+    margin-bottom: 40px;
+}
+
 .profile{
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(128, 179, 219, 20%);
+    border-radius: 50px;
 }
 
 h4{
     font-size: 25px;
     font-weight: 500;
-    margin-top: 40px;
     margin-bottom: 20px;
 }
 
