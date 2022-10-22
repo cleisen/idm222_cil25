@@ -1,0 +1,259 @@
+:root{
+    --background-color: #f1e9e1;
+    --branding-topic: #ff8f1e;
+    --interaction-topic: #88c23f;
+    --organization-topic: #f195e4;
+    --data-topic: #667ef2;
+    --off-black: #333333;
+    --section-padding: 70px 0 100px 0;
+    --max-width: 1300px;
+    --button-radius: 25px;
+    --font-2: "Butler";
+    --topic-margin: 0 20px 0 0;
+    --top-btn-margin: 0 10px 0 0;
+    --dot-margin: 3px;
+
+}
+
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img, video {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+body{
+    font-family: "Quasimoda";
+    background-color: var(--background-color);
+    background-image:  
+    radial-gradient(at 64% 0%, hsla(60,99%,78%,1) 0, transparent 22%),  
+    radial-gradient(at 16% 30%, hsla(78,95%,73%,1) 0, transparent 16%),  
+    radial-gradient(at 100% 26%, hsla(37,85%,66%,1) 0, transparent 14%),  
+    radial-gradient(at 34% 100%, hsla(78,95%,73%,1) 0, transparent 26%),  
+    radial-gradient(at 12% 55%, hsla(320,100%,87%,1) 0, transparent 18%),  
+    radial-gradient(at 78% 64%, hsla(65,99%,79%,1) 0, transparent 17%),  
+    radial-gradient(at 100% 100%, hsla(60,99%,74%,1) 0, transparent 16%);
+    color: var(--off-black);
+    -webkit-font-smoothing: antialiased;
+}
+
+.righton{
+    background-image: none;
+}
+
+
+
+
+/* vvvv NAV BAR vvvv */
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header__logo{
+    padding-right: 25px;
+}
+.header__cont {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 35px 45px;
+    min-width: var(--max-width);
+    max-width: var(1400px);
+}
+.header__list {
+    display: flex;
+}
+
+.header__list-item {
+    list-style-type: none;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header__link {
+    color: var(--off-black);
+    margin-left: 40px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.header__link:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--off-black);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.header__link:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* don't show hamburger menu */
+.hamToggle{
+    display: none;
+}
+
+
+
+/* vvvv REST OF PAGE vvvv */
+
+.header_title{
+    position: absolute;
+    z-index: 2;
+    margin-left: 50px;
+}
+
+.bg_shape{
+    position: relative;
+    z-index: 1;
+}
+
+.bg_shape img{
+    border-radius: 0px;
+}
+
+.title{
+    padding: 0 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.title__left{
+    display: flex;
+    align-items: center;
+}
+
+.amtrak__head{
+    font-family: "Quasimoda";
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 90px;
+    letter-spacing: 0.065em;
+    font-style: italic;
+    color: var(--off-black);
+    display: flex;
+    justify-content: flex-start;
+}
+
+  .top__btns{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: -13px;
+}
+
+.top__btn__1, .top__btn__2, .top__btn__3, .top__btn__4{
+    height: 33px;
+    width: 93px;
+    background-color: transparent;
+    border-radius: var(--button-radius);
+    border: 1px solid var(--off-black);
+    color: var(--off-black);
+    font-weight: 500;
+    font-family: "Quasimoda";
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    margin: var(--top-btn-margin);
+}
+
+.top__btn__2{
+    width: 120px;
+}
+
+.top__btn__3{
+    width: 139px;
+}
+
+.top__btn__4{
+    width: 120px;
+}
+
+/* .amtrak__img-cont{
+    width: 40%;
+} */
+
+.amtrak__img{
+    margin: auto;
+    width: 480px;
+}
+
+
+.page{
+    width: 70%;
+    margin: auto;
+    font-size: 17px;
+}
+
+.description{
+    margin-top: 40px;
+}
+
+#infoBlock{
+    align-items: flex-start;
+    margin-top: 35px;
+}
+
+.flex__container{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col_1_3{
+    width: 30%;
+    height: auto;
+    padding: 5px;
+}
+
+.pi{
+    margin-left: 15px;
+}
+
+.rr{
+    margin-left: 45px;
+    width: 40%;
+}
+
+.tu{
+    width: 15%;
+    margin-left: 45px;
+}
+
+h3{
+    padding-bottom: 20px;
+    color: var(--branding-topic);
+    font-weight: 400;
+}
+
+.overview{
+    margin-top: 50px;
+}
+
+h1{
+    margin-top: 40px;
+    color: var(--data-topic);
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
