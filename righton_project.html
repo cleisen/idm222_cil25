@@ -286,7 +286,8 @@
             
             <h2>02 - Perform the Usability Test</h2>
             <h4>Our Setup:</h4>
-            <div class="bullets">
+            <ul>
+                <div class="bullets">
                 <li>2 different classes</li>
                 <li>45 minutes per class</li>
                 <li>35 students per class</li>
@@ -295,6 +296,7 @@
                 <li>1 smartboard</li>
                 <li>Students&apos; personal devices</li>
             </div>
+            </ul>
             <br>
             <br>
             To watch the students&apos; genuine reactions and thought-processes, 
@@ -303,15 +305,138 @@
             to our google form questionnaire, and us interviewers could move to 
             the next group.
             <br>
-            <img src="/images/righton-cs/me-students.png"></img>
+            <img src="/images/righton-cs/me-students.png" class="one_image" alt="me w/ students"></img>
             Finally, we had a group discussion at the end to talk about any other 
             feedback they wanted to share apart from the google form.
-            <img src="/images/righton-cs/me-class.png" class="one_image"></img>
+            <img src="/images/righton-cs/me-class.png" class="one_image" alt="me w/ class"></img>
 
+            <h2>03 - Analyze Data, Identify Trends</h2>
+            We asked 12 survey questions to 41 students
+            <br>
+            <br>
+            These were the most impactful answers we received:
+            <ul>
+                <div class="bullets">
+                <li>65% of students said the instructions were not very clear</li>
+                <li>“Make me pay attention in some way, I skipped past it too 
+                    easily”</li>
+                <li>71% of students said they would prefer to see both an 
+                    individual score screen and the top 5 leaderboard of their 
+                    classmates</li>
+                <li>“My favorite thing about the RightOn app is the little monsters”</li>
+            </div>
+            </ul>
+            <br>
+            <br>
+            Patterns we noticed when watching the students in the first class 
+            interact with the prototype:
+            <ul>
+                <div class="bullets">
+                <li>Confusion about what they were supposed to be doing</li>
+                <li>Still some slight confusion about the question/answer swipe layout</li>
+                <li>The new leaderboard got them excited and increased motivation</li>
+                <li>Gaps in the flow where the users have to wait caused disengagement</li>
+            </div>
+            </ul>
+            <img src="/images/righton-cs/flow-gap.png" class="one_image" alt="flow-gap">
+            
+            <h4>Surprising Results</h4>
+            Conducted A/B testing with 1: new layout idea and 2: the original layout
+            <br>
+            <img src="/images/righton-cs/a-b-test.png" class="one_image" alt="a/b test">
+            <br>
+            Even though we thought the new design was more intuitive, there were a 
+            mix of things that proved our opinion wrong:
+            <div class="bullets">
+                1. In the case of long word problems, students preferred the 2 
+                    card layout
+                    <br>
+                2. Students enjoyed how it challenged them to think of their own 
+                    answer before seeing the options
+                    <br>
+                3. It turned out to be not as big of an issue as we thought 
+                    <br>
+                    <br>
+                 - When first detecting the card swipe motion as a point of 
+                 confusion, we had mainly conducted testing via zoom. Because 
+                 our subjects used the figma prototype with a mousepad, it 
+                 didn&apos;t perfectly simulate how it would be typically used 
+                 on a mobile device.
+            </div>
+        </div>
+
+        <div>
+            <h1 class="center_title">solutions</h1>
+            <h2 class="h2center"> - How Do These Changes Improve the Overall User 
+                Experience? - </h2>
+
+            <h2>Question/Answer Layout</h2>
+            Since there was still slight confusion, we tested adding small arrows 
+            to the cards to signify that there is something else there to see.
+            <br>
+            <video class="video center" width="250" height="444" controls=""
+                    src="images/righton-cs/videos/arrow-card..mp4"></video>
+            
+                    Because swiping is a natural motion for mobile users, the 
+                    students got the hang of it super easily, and the arrows 
+                    helped to nudge those still unsure.
+
+            <h2>New “How to Play” Tutorial</h2>
+            Students can now connect the words with images to anticipate what&apos;s 
+            coming next
+            <br>
+            <div class="compare">
+                <div class="img_left">
+                    <video class="video2" width="250" height="444" controls=""
+                    src="images/righton-cs/videos/how-to-og.mp4"></video>
+                    before
+                </div>
+                <div class="img_right">
+                    <video class="video2" width="250" height="444" controls=""
+                    src="images/righton-cs/videos/how-to-new.mp4"></video>
+                    after
+                </div>
+            </div>
+            When testing these screens with our second class, there was a 
+            noticeable decrease in confusion of the instructions of the game.
+            <br>
+            
+            <h2>Leaderboard</h2>
+            In the original leaderboard flow, those who didn&apos;t land in the top 5, 
+            received no personal feedback and ended the game feeling negatively 
+            about themselves.
+            <br>
+            <video class="video center" width="250" height="444" controls=""
+                    src="images/righton-cs/videos/og-leaderboard.mp4"></video>
+            
+            Following RightOn&apos;s mission to promote a positive culture of error, 
+            we found a solution that would:
+            <ul>
+                <div class="bullets">
+                <li>Avoid causing stress</li>
+                <li>Encourage those with lower scores</li>
+                <li>Give the feeling of fairness and satisfaction</li>
+            </div>
+            </ul>
+            <br>
+            <video class="video center" width="250" height="444" controls=""
+                    src="images/righton-cs/videos/new-leaderboard.mp4"></video>
+            First, students see their individual score, and then they can 
+            chose to advance to the leaderboard if they want to
+            <br>
+            <br>
+            The monster&apos;s sign lets the student know if they made it in the 
+            top 5, but gives them positive feedback even if they didn&apos;t
+
+
+            
             
 
 
+
+
         </div>
+
 
 
 
