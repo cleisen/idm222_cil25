@@ -1,0 +1,228 @@
+:root{
+    --background-color: #f1e9e1;
+    --branding-topic: #ff8f1e;
+    --interaction-topic: #88c23f;
+    --organization-topic: #f195e4;
+    --data-topic: #667ef2;
+    --off-black: #333333;
+    --section-padding: 70px 0 100px 0;
+    --max-width: 1300px;
+    --button-radius: 25px;
+    --font-2: "Butler";
+    --topic-margin: 0 20px 0 0;
+    --top-btn-margin: 0 7px 00;
+    --dot-margin: 3px;
+
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: auto;
+    width: 100%;
+  }
+
+body{
+    font-family: "Quasimoda";
+    background-color: var(--background-color);
+    background-image:  
+    radial-gradient(at 64% 0%, hsla(60,99%,78%,1) 0, transparent 22%),  
+    radial-gradient(at 16% 30%, hsla(78,95%,73%,1) 0, transparent 16%),  
+    radial-gradient(at 100% 26%, hsla(37,85%,66%,1) 0, transparent 14%),  
+    radial-gradient(at 34% 100%, hsla(78,95%,73%,1) 0, transparent 26%),  
+    radial-gradient(at 12% 55%, hsla(320,100%,87%,1) 0, transparent 18%),  
+    radial-gradient(at 78% 64%, hsla(65,99%,79%,1) 0, transparent 17%),  
+    radial-gradient(at 100% 100%, hsla(60,99%,74%,1) 0, transparent 16%);
+    color: var(--off-black);
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* nav */
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__logo{
+    padding-right: 25px;
+}
+
+.header__cont {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 35px 45px;
+    max-width: var(--max-width);
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__list-item {
+    list-style-type: none;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header__link {
+    color: var(--off-black);
+    margin-left: 40px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.header__link:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--off-black);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.header__link:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* don't show hamburger menu */
+.hamToggle{
+    display: none;
+}
+
+
+
+/* about page */
+
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 80%;
+    margin-top: 70px;
+}
+
+.hero__img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    /* display: block; */
+    border: 3px solid var(--data-topic);
+}
+
+.intro{
+    width: 30%;
+}
+
+.hi__there{
+    padding-bottom: 20px;
+    animation: fadeIn ease-in .5s forwards;
+    opacity: 0;
+}
+
+h1{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.my__name{
+    font-style: normal;
+    font-weight: 600;
+    color: #F78F26;
+    animation: fadeIn .5s ease-in .5s forwards;
+    opacity: 0;
+}
+
+.squiggle{
+    width: 50%;
+    animation: fadeIn .5s ease-in .5s forwards;
+    opacity: 0;
+}
+
+.i__am{
+    padding-top: 15px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    animation: fadeIn .5s ease-in .5s forwards;
+    opacity: 0;
+}
+
+.span{
+    color: var(--data-topic);
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
+
+.words{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.words div{
+    width: 68%;
+}
+
+.contact{
+    margin-top: 90px;
+}
+
+.contact__cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collab__curve{
+    width: 350px;
+    margin-bottom: 160px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--off-black);
+    font-weight: 400;
+    font-family: var(--font-2);
+    font-size: 15px;
+    margin-bottom: 30px;
+}

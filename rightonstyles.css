@@ -428,3 +428,15 @@ ul ul{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--off-black);
+    font-weight: 400;
+    font-family: var(--font-2);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
